@@ -86,7 +86,8 @@ public class VarastoTest {
     public void josLisataanNegatiivinenMaaraEiTehdaMuutoksia() {
         varasto.lisaaVarastoon(-3);
         
-        assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
+        assertEquals(-3, varasto.getSaldo(), vertailuTarkkuus); //testi tahalleen rikottu, arvon pitäisi olla 0
+        //oho
     }
     
     @Test
